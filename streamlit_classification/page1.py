@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 st.set_page_config(
-    page_icon="robo.jfif",
+    page_icon="https://github.com/nive015/WEBSITE_FOR_CLASSIFICATION/blob/main/streamlit_classification/robo.jfif",
     layout="wide",
     initial_sidebar_state="auto",
     )
