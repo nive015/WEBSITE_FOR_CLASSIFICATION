@@ -2,19 +2,18 @@
 
 DESCRIPTION:
   ABOUT THE WEBSITE:
-    THIS WEBSITE MAINLY AIMS ON PERFORMING CLASSIFICATION FOR ANY GIVEN DATASET. THE USER WILL SIMPLY HAVE TO UPLOAD A DATASET WHICH IS IN .CSV OR .XLSX FORMAT. FURTHER, THE DATA=PREPROESSING WILL BE DONE
-    Your `page1.py` script is a **Streamlit-based classification app** that allows users to upload a dataset, preprocess it, train multiple classification models, and visualize the results. Below is a **detailed breakdown** of what’s happening in your script:
+    THIS WEBSITE MAINLY AIMS ON PERFORMING CLASSIFICATION FOR ANY GIVEN DATASET. THE USER WILL SIMPLY HAVE TO UPLOAD A DATASET WHICH IS IN .CSV OR .XLSX FORMAT. FURTHER, THE DATA=PREPROESSING, TRAINING USING MULTIPLE MODELS AND VISUALISATION WILL BE ENABLED.
+ 
 
----
 
-## **1. Streamlit Page Setup**
+
+ **1. Streamlit Page Setup**
 - `st.set_page_config(...)` sets the page icon (`robo.jfif`), layout, and sidebar state.
 - **Custom CSS styling**:
   - Changes the background color of the main area to black.
   - Customizes the sidebar (`red` background).
   - Styles `h2` and `h3` headings with different colors and fonts.
 
----
 
 ## **2. Sidebar and Introduction**
 - **Sidebar image**: Displays `robo.jfif` as a logo.
