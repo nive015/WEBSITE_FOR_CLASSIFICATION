@@ -4,7 +4,7 @@ numpy
 matplotlib.pyplot
 seaborn
 scikit-learn
-Pillow
+PIL
 io
 requests
 os
