@@ -15,16 +15,15 @@ DESCRIPTION:
   - Styles `h2` and `h3` headings with different colors and fonts.
 
 
-## **2. Sidebar and Introduction**
+ **2. Sidebar and Introduction**
 - **Sidebar image**: Displays `robo.jfif` as a logo.
 - **Main Title**: Displays `"Classification Algorithms"` in a red `Algerian` font.
 - **Introduction to Classification**:
   - Provides a **textual description** of what classification is.
   - Lists **six common classification algorithms** with explanations.
 
----
 
-## **3. File Upload and Data Handling**
+ **3. File Upload and Data Handling**
 - The app allows users to upload a CSV or XLSX file.
 - Reads the file into a Pandas DataFrame.
 - **Handles missing values**:
@@ -32,16 +31,12 @@ DESCRIPTION:
   - Categorical columns → filled with mode (most frequent value).
 - **Encodes categorical columns** using `LabelEncoder` so models can process them.
 
----
-
-## **4. Selecting Target Column & Data Splitting**
+ **4. Selecting Target Column & Data Splitting**
 - Users select the **target column** (dependent variable).
 - The dataset is split into **features (X) and target (y)**.
 - Splits the data into **training (70%) and testing (30%) sets** using `train_test_split()`.
 
----
-
-## **5. Model Selection and Training**
+ **5. Model Selection and Training**
 Users select a classification algorithm:
 - **Decision Tree** (`DecisionTreeClassifier()`)
 - **Random Forest** (`RandomForestClassifier(n_estimators=100)`)
@@ -58,46 +53,13 @@ Users select a classification algorithm:
    - **Confusion Matrix**
    - **Classification Report** (precision, recall, F1-score)
 
----
-
-## **6. Visualization Options**
+**6. Visualization Options**
 Users can choose **different types of graphs**:
 - **Decision Boundary**: Plots decision regions (only for datasets with 2 features).
 - **Scatter Plot**: User selects `x` and `y` features, then plots points colored by class.
 - **Bar Chart**: Shows frequency of values for a selected column.
 - **Line Plot**: Plots one column against another.
 - **Histogram**: Displays the distribution of a selected column.
-
----
-
-## **7. Error Handling**
-- **Try-except blocks** catch errors like:
-  - Invalid file format.
-  - Issues with data encoding.
-  - Model training failures.
-
----
-
-### **Overall Workflow**
-1. User **uploads a dataset**.
-2. The app **preprocesses data** (fills missing values, encodes labels).
-3. User **selects a target column**.
-4. Data is **split into train/test sets**.
-5. User **chooses a classification algorithm**.
-6. Model is **trained, tested, and evaluated**.
-7. User can **visualize the results**.
-
-This app provides an **interactive machine learning experience** for non-technical users, allowing them to train and compare classification models without writing code.
-
----
-
-### **Possible Enhancements**
-1. **More algorithms** (e.g., XGBoost, Neural Networks).
-2. **Hyperparameter tuning** for better model performance.
-3. **Feature selection** to remove irrelevant columns.
-4. **Cross-validation** for more reliable accuracy estimation.
-
-Would you like me to refine or add anything else? 😊
 
 Here is the for the video recording of my project:
 
