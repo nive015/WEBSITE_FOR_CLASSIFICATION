@@ -3,7 +3,7 @@ from PIL import Image
 
 # Set page configuration
 st.set_page_config(
-    page_icon=Image.open("robo.jfif"),
+    page_icon=Image.open("https://raw.githubusercontent.com/nive015/WEBSITE_FOR_CLASSIFICATION/refs/heads/main/streamlit_classification/robo.jfif"),
     layout="wide",
     initial_sidebar_state="auto"
 )
