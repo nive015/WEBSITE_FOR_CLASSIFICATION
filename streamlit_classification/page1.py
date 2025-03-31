@@ -2,11 +2,21 @@ import streamlit as st
 from PIL import Image
 
 # Set page configuration
+import requests
+from io import BytesIO
+
+# Download the image
+url = "https://raw.githubusercontent.com/nive015/WEBSITE_FOR_CLASSIFICATION/refs/heads/main/streamlit_classification/robo.jfif"
+response = requests.get(url)
+img = Image.open(BytesIO(response.content))
+
+# Set the page configuration
 st.set_page_config(
-    page_icon=Image.open("https://raw.githubusercontent.com/nive015/WEBSITE_FOR_CLASSIFICATION/refs/heads/main/streamlit_classification/robo.jfif"),
+    page_icon=img,
     layout="wide",
     initial_sidebar_state="auto"
 )
+
 
 # Apply custom CSS styles
 st.markdown("""
