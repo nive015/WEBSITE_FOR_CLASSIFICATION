@@ -13,6 +13,17 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 from PIL import Image
+from io import BytesIO
+image_url = "https://raw.githubusercontent.com/nive015/WEBSITE_FOR_CLASSIFICATION/main/streamlit_classification/robo.jfif"
+
+try:
+    response = requests.get(image_url)
+    response.raise_for_status()
+    image = Image.open(BytesIO(response.content))
+    st.sidebar.image(image, use_column_width=True)
+except Exception as e:
+    st.sidebar.error(f"Image failed to load: {e}")
+    
 st.set_page_config(
     page_icon="robo.jfif",
     layout="wide",
@@ -51,12 +62,7 @@ st.markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
-try:
-    st.markdown('<h1 style="color:red;font-family:Algerian;font-size:+2;">Classification Algorithms</h1><hr>', unsafe_allow_html=True)
-    #sidebar image
-    i_path = "robo.jfif"
-    image = Image.open(i_path)
-    st.sidebar.image(image, caption="", use_column_width=True)
+
 
     # File uploader
     st.write("Accepted File Formats: csv, xlsx.")
