@@ -51,7 +51,7 @@ image_url = "https://raw.githubusercontent.com/nive015/WEBSITE_FOR_CLASSIFICATIO
 try:
     response = requests.get(image_url)
     image = Image.open(BytesIO(response.content))
-    st.sidebar.image(image, caption="", use_column_width =True)
+    st.sidebar.image(image, caption="", use_container_width =True)
 except Exception as e:
     st.sidebar.error(f"Error loading image: {e}")
 
