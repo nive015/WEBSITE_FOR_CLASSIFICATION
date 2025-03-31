@@ -15,13 +15,18 @@ st.set_page_config(
 st.markdown("""
     <style>
         .main {
-            background-color: black; /* Main area background */
+            background-color: black; 
+           /* bg for main area*/
         }
-        [data-testid="stSidebar"] {
-            background-color: red !important; /* Sidebar background */
+       .st-emotion-cache-1gv3huu { 
+            background-color: red;
+            color: #FF0000; /*sidebar bg*/
         }
-        h1, h2, h3 {
-            color: white !important;
+        .st-emotion-cache-12fmjuu ezrtsby2{
+            background-color: red; /*deploy thing bg*/
+        }
+       .st-emotion-cache-6qob1r eczjsme11{
+            color: white; /*sidebar-content*/
         }
         .h2tags {
             color: #00FFFF;
@@ -29,7 +34,11 @@ st.markdown("""
         }
         .h3tags {
             color: white;
+            font-size: +2;
             text-align: center;
+        }
+        ."st-emotion-cache-j7qwjs eczjsme15{
+            font-color:white;
         }
     </style>
     """, unsafe_allow_html=True)
